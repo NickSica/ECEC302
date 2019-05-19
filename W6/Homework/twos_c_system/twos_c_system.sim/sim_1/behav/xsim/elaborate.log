@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/nick/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 8ed90cf6ebfe480faeaaad18d7b16007 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot twos_c_test_behav xil_defaultlib.twos_c_test -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture beh of entity xil_defaultlib.twos_c_system [\twos_c_system(n=4)\]
+Compiling architecture struc of entity xil_defaultlib.twos_c_test
+Built simulation snapshot twos_c_test_behav

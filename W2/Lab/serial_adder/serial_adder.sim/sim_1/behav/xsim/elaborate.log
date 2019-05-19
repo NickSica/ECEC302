@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/nick/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto b2231c44f7b1477abfdfb9c6eccbb4d2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot serial_adder_behav xil_defaultlib.serial_adder -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture beh of entity xil_defaultlib.add3bits [add3bits_default]
+Compiling architecture beh of entity xil_defaultlib.serial_adder
+Built simulation snapshot serial_adder_behav

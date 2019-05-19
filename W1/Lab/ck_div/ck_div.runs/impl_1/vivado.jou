@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Apr  2 17:24:13 2019
+# Process ID: 8888
+# Current directory: C:/Users/njs82/Documents/xilinx_projects/ck_div/ck_div.runs/impl_1
+# Command line: vivado.exe -log ck_div.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ck_div.tcl -notrace
+# Log file: C:/Users/njs82/Documents/xilinx_projects/ck_div/ck_div.runs/impl_1/ck_div.vdi
+# Journal file: C:/Users/njs82/Documents/xilinx_projects/ck_div/ck_div.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ck_div.tcl -notrace

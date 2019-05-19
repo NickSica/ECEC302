@@ -1,0 +1,18 @@
+restart
+
+add_force {/serial_adder/clk} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/serial_adder/a} -radix hex {1 0ns}
+add_force {/serial_adder/b} -radix hex {0 0ns}
+add_force {/serial_adder/reset} -radix hex {1 0ns}
+run 100ps
+
+add_force {/serial_adder/reset} -radix hex {0 0ns}
+run 100ps
+
+add_force {/serial_adder/a} -radix hex {1 0ns}
+add_force {/serial_adder/b} -radix hex {1 0ns}
+run 100ps
+
+add_force {/serial_adder/a} -radix hex {0 0ns}
+add_force {/serial_adder/b} -radix hex {0 0ns}
+run 100ps

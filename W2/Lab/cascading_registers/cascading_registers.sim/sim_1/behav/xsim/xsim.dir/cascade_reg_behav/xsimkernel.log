@@ -1,0 +1,7 @@
+Running: xsim.dir/cascade_reg_behav/xsimk -simmode gui -wdb cascade_reg_behav.wdb -simrunnum 0 -socket 60501
+Design successfully loaded
+Design Loading Memory Usage: 33068 KB (Peak: 33068 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 114804 KB (Peak: 180340 KB)
+Simulation CPU Usage: 20 ms

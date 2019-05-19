@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 30 12:11:41 2019
+# Process ID: 1640
+# Current directory: /home/nick/ECEC302/W5/Homework/t_gate/t_gate.runs/synth_1
+# Command line: vivado -log t_gate7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source t_gate7.tcl
+# Log file: /home/nick/ECEC302/W5/Homework/t_gate/t_gate.runs/synth_1/t_gate7.vds
+# Journal file: /home/nick/ECEC302/W5/Homework/t_gate/t_gate.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source t_gate7.tcl -notrace

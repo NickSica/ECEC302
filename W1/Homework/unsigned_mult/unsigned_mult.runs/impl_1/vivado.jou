@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  8 19:58:32 2019
+# Process ID: 14734
+# Current directory: /home/nick/ECEC302/W1/Homework/unsigned_mult/unsigned_mult.runs/impl_1
+# Command line: vivado -log unsigned_mult.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source unsigned_mult.tcl -notrace
+# Log file: /home/nick/ECEC302/W1/Homework/unsigned_mult/unsigned_mult.runs/impl_1/unsigned_mult.vdi
+# Journal file: /home/nick/ECEC302/W1/Homework/unsigned_mult/unsigned_mult.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source unsigned_mult.tcl -notrace

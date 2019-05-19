@@ -1,0 +1,1 @@
+-wto "b2231c44f7b1477abfdfb9c6eccbb4d2" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "serial_adder_behav" "xil_defaultlib.serial_adder" -log "elaborate.log" 
