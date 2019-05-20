@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/njs82.DREXEL/sh_reg/sh_reg.srcs/sources_1/new/sh_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sh_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/njs82.DREXEL/sh_reg/sh_reg.srcs/sources_1/new/sh_reg_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sh_reg_test

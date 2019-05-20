@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue May  7 17:43:44 2019
+# Process ID: 8484
+# Current directory: C:/Users/njs82.DREXEL/router/router.runs/synth_1
+# Command line: vivado.exe -log router_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source router_tb.tcl
+# Log file: C:/Users/njs82.DREXEL/router/router.runs/synth_1/router_tb.vds
+# Journal file: C:/Users/njs82.DREXEL/router/router.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source router_tb.tcl -notrace

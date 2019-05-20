@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Apr 23 16:51:50 2019
+# Process ID: 9132
+# Current directory: C:/Users/njs82/Documents/quiz1/quiz1.runs/synth_1
+# Command line: vivado.exe -log stack_reg_5_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stack_reg_5_tb.tcl
+# Log file: C:/Users/njs82/Documents/quiz1/quiz1.runs/synth_1/stack_reg_5_tb.vds
+# Journal file: C:/Users/njs82/Documents/quiz1/quiz1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stack_reg_5_tb.tcl -notrace
