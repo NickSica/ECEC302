@@ -3,7 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Mon May 20 18:10:47 2019">
+=======
+<application name="pa" timeStamp="Tue May 21 12:57:12 2019">
+>>>>>>> 290fce13064a33ebc6e043cb0332ed3a6d16ce64
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="20e8c9097ef14436b85221b1b0b8dde7" type="ProjectID"/>
 <property name="ProjectIteration" value="6" type="ProjectIteration"/>
@@ -98,9 +102,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="36" type="GuiHandlerData"/>
 </item>
 <item name="Other">
+<<<<<<< HEAD
 <property name="GuiMode" value="3" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="2" type="TclMode"/>
+=======
+<property name="GuiMode" value="44" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="32" type="TclMode"/>
+>>>>>>> 290fce13064a33ebc6e043cb0332ed3a6d16ce64
 </item>
 </section>
 </application>
