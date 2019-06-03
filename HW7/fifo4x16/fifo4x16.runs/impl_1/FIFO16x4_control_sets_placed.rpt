@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue May 28 13:54:23 2019
-| Host         : DESKTOP-OB4CG3B running 64-bit major release  (build 9200)
+| Date         : Mon Jun  3 18:15:36 2019
+| Host         : DESKTOP-6BMKAM4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file FIFO16x4_control_sets_placed.rpt
 | Design       : FIFO16x4
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    31 |
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    14 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |            2 |
-|      4 |            3 |
-|      8 |            2 |
+|      4 |            2 |
+|      8 |            3 |
 |    16+ |            2 |
 +--------+--------------+
 
@@ -47,30 +46,28 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              65 |           27 |
+| No           | No                    | No                     |              35 |           10 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               4 |            2 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              20 |            5 |
+| Yes          | Yes                   | No                     |              51 |           13 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
-|    Clock Signal    |                                                      Enable Signal                                                      |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
-+--------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
-| ~rw_ns_BUFG        |                                                                                                                         |                                                      |                1 |              1 |
-|  rw_ns_reg_i_2_n_0 |                                                                                                                         |                                                      |                1 |              1 |
-|  clk_IBUF_BUFG     |                                                                                                                         |                                                      |                1 |              4 |
-|  en_reg_n_0_BUFG   |                                                                                                                         | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                2 |              4 |
-|  en_reg_n_0_BUFG   | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]_0[0] | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                1 |              4 |
-|  en_reg_n_0_BUFG   | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                                 | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                2 |              8 |
-|  en_reg_n_0_BUFG   | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]                                         | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                2 |              8 |
-|  en_reg_n_0_BUFG   |                                                                                                                         |                                                      |               10 |             28 |
-|  rw_ns_BUFG        |                                                                                                                         |                                                      |               14 |             32 |
-+--------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
++------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|   Clock Signal   |                                                      Enable Signal                                                      |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  en_reg_n_0_BUFG |                                                                                                                         | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                2 |              4 |
+|  en_reg_n_0_BUFG | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]_0[0] | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                1 |              4 |
+|  clk_IBUF_BUFG   |                                                                                                                         |                                                      |                3 |              8 |
+|  en_reg_n_0_BUFG | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                                 | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                2 |              8 |
+|  en_reg_n_0_BUFG | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]                                         | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0] |                2 |              8 |
+|  en_reg_n_0_BUFG |                                                                                                                         |                                                      |                7 |             28 |
+|  clk_IBUF_BUFG   | rw_ns                                                                                                                   | counter[31]_i_1_n_0                                  |                8 |             31 |
++------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
 
 

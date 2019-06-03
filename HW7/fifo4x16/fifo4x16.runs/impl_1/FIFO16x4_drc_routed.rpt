@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue May 28 13:54:42 2019
-| Host         : DESKTOP-OB4CG3B running 64-bit major release  (build 9200)
+| Date         : Mon Jun  3 18:16:17 2019
+| Host         : DESKTOP-6BMKAM4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file FIFO16x4_drc_routed.rpt -pb FIFO16x4_drc_routed.pb -rpx FIFO16x4_drc_routed.rpx
 | Design       : FIFO16x4
 | Device       : xc7a35tcpg236-1
@@ -24,12 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 3
+             Violations found: 2
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153  | Warning  | Gated clock check                                   | 1          |
 | RTSTAT-10 | Warning  | No routable loads                                   | 1          |
 +-----------+----------+-----------------------------------------------------+------------+
 
@@ -46,11 +45,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PDRC-153#1 Warning
-Gated clock check  
-Net rw_ns_reg_i_2_n_0 is a gated clock net sourced by a combinational pin rw_ns_reg_i_2/O, cell rw_ns_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 RTSTAT-10#1 Warning

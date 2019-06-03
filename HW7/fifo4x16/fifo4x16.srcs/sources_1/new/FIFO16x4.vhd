@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity FIFO16x4 is
-    port(clk, btn0, btn1, reset, w_en, r_en: in std_logic;
+    port(clk, btn0, btn1, reset: in std_logic;
          x: in std_logic_vector(3 downto 0);
          z: out std_logic_vector(3 downto 0);
          empty_flag, full_flag: out std_logic);
@@ -69,44 +69,51 @@ begin
         variable rw_ns: rw_state;
         variable counter: integer := 0; 
     begin       
-        case rw_ns is
-        when normal =>
-            rd_en <= r_en;
-            wr_en <= w_en;
-            if(full = '1') then
-                rw_ns := read;
-            end if;
-        when read =>
-            if(counter = 500) then
-                rd_en <= '1';
-                counter := 0;
-            else
-                counter := counter + 1;
-                rd_en <= '0';
-            end if;
-            
-            if(empty = '1' or reset = '1') then
-                rw_ns := normal;
-            end if;   
-        end case;
-        
         if(rising_edge(clk)) then
-            case db_ns is 
-            when not_rdy =>
-                en <= '0';
-                if(btn1 = '1') then
-                    db_ns := rdy;
+                case rw_ns is
+                when normal =>
+                    if(full = '1') then
+                        wr_en <= '0';
+                        en <= '1';
+                        rd_en <= '1';
+                        rw_ns := read;
+                    else
+                        rd_en <= '0';
+                        wr_en <= '1';
+                  
+                        case db_ns is 
+                        when not_rdy =>
+                            en <= '0';
+                            if(btn1 = '1') then
+                                db_ns := rdy;
+                            end if;
+                        when rdy =>
+                            en <= '0';
+                            if(btn0 = '1') then
+                                db_ns := pulse;
+                            end if;    
+                        when pulse =>
+                            en <= '1';
+                            db_ns := not_rdy;
+                        when others => null;
+                        end case;  
+                   end if; 
+            when read =>
+                if(counter = 1000000000) then
+                    en <= '1';
+                    rd_en <= '1';
+                    counter := 0;
+                else
+                    en <= '0';
+                    counter := counter + 1;
+                    rd_en <= '0';
                 end if;
-            when rdy =>
-                en <= '0';
-                if(btn0 = '1') then
-                    db_ns := pulse;
-                end if;    
-            when pulse =>
-                en <= '1';
-                db_ns := not_rdy;
-            when others => null;
-            end case;        
+            
+                if(empty = '1' or reset = '1') then
+                    rw_ns := normal;
+                end if;   
+            end case;
+  
         end if;
     end process;
 end beh;
