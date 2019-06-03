@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon May 20 18:37:45 2019
-| Host         : DESKTOP-OB4CG3B running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue May 28 12:13:50 2019
+| Host         : nicklinux running 64-bit unknown
 | Command      : report_drc -file test_twosCarray_drc_opted.rpt -pb test_twosCarray_drc_opted.pb -rpx test_twosCarray_drc_opted.rpx
 | Design       : test_twosCarray
 | Device       : xc7a35tcpg236-1

@@ -1,7 +1,0 @@
-Running: xsim.dir/twos_c_test_behav/xsimk -simmode gui -wdb twos_c_test_behav.wdb -simrunnum 0 -socket 39913
-Design successfully loaded
-Design Loading Memory Usage: 32824 KB (Peak: 32824 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 115548 KB (Peak: 180096 KB)
-Simulation CPU Usage: 160 ms

@@ -65,17 +65,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/xoepe/Documents/ECEC302/L8/block_ram/block_ram.cache/wt [current_project]
-  set_property parent.project_path C:/Users/xoepe/Documents/ECEC302/L8/block_ram/block_ram.xpr [current_project]
-  set_property ip_output_repo C:/Users/xoepe/Documents/ECEC302/L8/block_ram/block_ram.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/nick/ECEC302/L8/block_ram/block_ram.cache/wt [current_project]
+  set_property parent.project_path /home/nick/ECEC302/L8/block_ram/block_ram.xpr [current_project]
+  set_property ip_output_repo /home/nick/ECEC302/L8/block_ram/block_ram.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet C:/Users/xoepe/Documents/ECEC302/L8/block_ram/block_ram.runs/synth_1/block_RAM16x4.dcp
-  read_ip -quiet c:/Users/xoepe/Documents/ECEC302/L8/block_ram/block_ram.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_xdc C:/Users/xoepe/Documents/ECEC302/Basys3_Master.xdc
+  add_files -quiet /home/nick/ECEC302/L8/block_ram/block_ram.runs/synth_1/block_RAM16x4.dcp
+  read_ip -quiet /home/nick/ECEC302/L8/block_ram/block_ram.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_xdc /home/nick/ECEC302/L8/block_ram/block_ram.srcs/constrs_1/imports/ECEC302/Basys3_Master.xdc
   link_design -top block_RAM16x4 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
