@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue May 28 13:54:43 2019
-| Host             : DESKTOP-OB4CG3B running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date             : Tue May 28 14:21:58 2019
+| Host             : nicklinux running 64-bit unknown
 | Command          : report_power -file FIFO16x4_power_routed.rpt -pb FIFO16x4_power_summary_routed.pb -rpx FIFO16x4_power_routed.rpx
 | Design           : FIFO16x4
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.041        |
+| Total On-Chip Power (W)  | 1.263        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.967        |
-| Device Static (W)        | 0.074        |
+| Dynamic (W)              | 1.188        |
+| Device Static (W)        | 0.075        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 79.8         |
-| Junction Temperature (C) | 30.2         |
+| Max Ambient (C)          | 78.7         |
+| Junction Temperature (C) | 31.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |     0.130 |      198 |       --- |             --- |
-|   LUT as Logic          |     0.106 |       74 |     20800 |            0.36 |
-|   BUFG                  |     0.010 |        3 |        32 |            9.38 |
-|   CARRY4                |     0.009 |        8 |      8150 |            0.10 |
-|   Register              |     0.006 |       89 |     41600 |            0.21 |
-|   Others                |     0.000 |       17 |       --- |             --- |
+| Slice Logic             |     0.145 |      167 |       --- |             --- |
+|   LUT as Logic          |     0.094 |       46 |     20800 |            0.22 |
+|   BUFG                  |     0.020 |        2 |        32 |            6.25 |
+|   CARRY4                |     0.016 |        8 |      8150 |            0.10 |
+|   Register              |     0.016 |       90 |     41600 |            0.22 |
+|   Others                |     0.000 |       15 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        1 |      9600 |            0.01 |
-| Signals                 |     0.217 |      183 |       --- |             --- |
-| Block RAM               |     0.057 |      0.5 |        50 |            1.00 |
-| I/O                     |     0.563 |       16 |       106 |           15.09 |
-| Static Power            |     0.074 |          |           |                 |
-| Total                   |     1.041 |          |           |                 |
+| Signals                 |     0.242 |      137 |       --- |             --- |
+| Block RAM               |     0.232 |      0.5 |        50 |            1.00 |
+| I/O                     |     0.569 |       14 |       106 |           13.21 |
+| Static Power            |     0.075 |          |           |                 |
+| Total                   |     1.263 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,16 +73,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.454 |       0.443 |      0.011 |
-| Vccaux    |       1.800 |     0.032 |       0.019 |      0.013 |
-| Vcco33    |       3.300 |     0.149 |       0.148 |      0.001 |
+| Vccint    |       1.000 |     0.658 |       0.646 |      0.012 |
+| Vccaux    |       1.800 |     0.032 |       0.020 |      0.013 |
+| Vcco33    |       3.300 |     0.153 |       0.152 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.001 |      0.000 |
+| Vccbram   |       1.000 |     0.006 |       0.006 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -140,10 +140,10 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| FIFO16x4            |     0.967 |
-|   U1                |     0.166 |
-|     U0              |     0.166 |
-|       inst_fifo_gen |     0.166 |
+| FIFO16x4            |     1.188 |
+|   U1                |     0.355 |
+|     U0              |     0.355 |
+|       inst_fifo_gen |     0.355 |
 +---------------------+-----------+
 
 

@@ -65,15 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/xoepe/Documents/ECEC302/HW6/twosCarray/twosCarray.cache/wt [current_project]
-  set_property parent.project_path C:/Users/xoepe/Documents/ECEC302/HW6/twosCarray/twosCarray.xpr [current_project]
-  set_property ip_output_repo C:/Users/xoepe/Documents/ECEC302/HW6/twosCarray/twosCarray.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/nick/ECEC302/HW6/twosCarray/twosCarray.cache/wt [current_project]
+  set_property parent.project_path /home/nick/ECEC302/HW6/twosCarray/twosCarray.xpr [current_project]
+  set_property ip_output_repo /home/nick/ECEC302/HW6/twosCarray/twosCarray.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/xoepe/Documents/ECEC302/HW6/twosCarray/twosCarray.runs/synth_1/test_twosCarray.dcp
-  read_xdc C:/Users/xoepe/Documents/ECEC302/Basys3_Master.xdc
+  add_files -quiet /home/nick/ECEC302/HW6/twosCarray/twosCarray.runs/synth_1/test_twosCarray.dcp
+  read_xdc /home/nick/ECEC302/Basys3_Master.xdc
   link_design -top test_twosCarray -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

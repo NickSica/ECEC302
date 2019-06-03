@@ -1,1 +1,0 @@
--wto "8ed90cf6ebfe480faeaaad18d7b16007" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "twos_c_test_behav" "xil_defaultlib.twos_c_test" -log "elaborate.log" 
