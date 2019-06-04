@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 15:35:11 2019
+# Process ID: 10914
+# Current directory: /home/nick/ECEC302/W6/Homework/twos_c_system/twos_c_system.runs/impl_1
+# Command line: vivado -log twos_c_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source twos_c_test.tcl -notrace
+# Log file: /home/nick/ECEC302/W6/Homework/twos_c_system/twos_c_system.runs/impl_1/twos_c_test.vdi
+# Journal file: /home/nick/ECEC302/W6/Homework/twos_c_system/twos_c_system.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source twos_c_test.tcl -notrace

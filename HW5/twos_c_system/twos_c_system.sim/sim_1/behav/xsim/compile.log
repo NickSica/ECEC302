@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nick/ECEC302/W6/Homework/twos_c_system/twos_c_system.srcs/sources_1/new/twos_c_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'twos_c_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nick/ECEC302/W6/Homework/twos_c_system/twos_c_system.srcs/sources_1/new/twos_c_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'twos_c_test'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nick/ECEC302/W6/Homework/twos_c_system/twos_c_system.srcs/sources_1/new/twos_c_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'twos_c_system'
