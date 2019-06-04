@@ -58,7 +58,6 @@ c_accum_0 your_instance_name (
   .B(B),            // input wire [3 : 0] B
   .CLK(CLK),        // input wire CLK
   .ADD(ADD),        // input wire ADD
-  .CE(CE),          // input wire CE
   .BYPASS(BYPASS),  // input wire BYPASS
   .SCLR(SCLR),      // input wire SCLR
   .Q(Q)            // output wire [7 : 0] Q

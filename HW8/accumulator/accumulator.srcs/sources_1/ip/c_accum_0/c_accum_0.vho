@@ -57,7 +57,6 @@ COMPONENT c_accum_0
     B : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     CLK : IN STD_LOGIC;
     ADD : IN STD_LOGIC;
-    CE : IN STD_LOGIC;
     BYPASS : IN STD_LOGIC;
     SCLR : IN STD_LOGIC;
     Q : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
@@ -74,7 +73,6 @@ your_instance_name : c_accum_0
     B => B,
     CLK => CLK,
     ADD => ADD,
-    CE => CE,
     BYPASS => BYPASS,
     SCLR => SCLR,
     Q => Q

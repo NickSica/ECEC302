@@ -74,7 +74,6 @@ begin
                 when normal =>
                     if(full = '1') then
                         wr_en <= '0';
-                        en <= '1';
                         rd_en <= '1';
                         rw_ns := read;
                     else
