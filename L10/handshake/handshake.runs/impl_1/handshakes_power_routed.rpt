@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Jun  3 19:51:31 2019
-| Host             : DESKTOP-OB4CG3B running 64-bit major release  (build 9200)
+| Date             : Tue Jun  4 17:40:52 2019
+| Host             : DESKTOP-6BMKAM4 running 64-bit major release  (build 9200)
 | Command          : report_power -file handshakes_power_routed.rpt -pb handshakes_power_summary_routed.pb -rpx handshakes_power_routed.rpx
 | Design           : handshakes
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.298        |
+| Total On-Chip Power (W)  | 4.537        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 4.212        |
-| Device Static (W)        | 0.086        |
+| Dynamic (W)              | 4.449        |
+| Device Static (W)        | 0.087        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 63.5         |
-| Junction Temperature (C) | 46.5         |
+| Max Ambient (C)          | 62.3         |
+| Junction Temperature (C) | 47.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.420 |      234 |       --- |             --- |
-|   LUT as Logic |     0.261 |      114 |     20800 |            0.55 |
-|   CARRY4       |     0.126 |       16 |      8150 |            0.20 |
-|   Register     |     0.025 |       90 |     41600 |            0.22 |
+| Slice Logic    |     0.560 |      236 |       --- |             --- |
+|   LUT as Logic |     0.401 |      122 |     20800 |            0.59 |
+|   CARRY4       |     0.127 |       16 |      8150 |            0.20 |
+|   Register     |     0.026 |       84 |     41600 |            0.20 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |     0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.414 |      169 |       --- |             --- |
-| I/O            |     3.378 |       34 |       106 |           32.08 |
-| Static Power   |     0.086 |          |           |                 |
-| Total          |     4.298 |          |           |                 |
+| Signals        |     0.495 |      195 |       --- |             --- |
+| I/O            |     3.394 |       22 |       106 |           20.75 |
+| Static Power   |     0.087 |          |           |                 |
+| Total          |     4.537 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.928 |       0.906 |      0.022 |
-| Vccaux    |       1.800 |     0.135 |       0.121 |      0.014 |
-| Vcco33    |       3.300 |     0.937 |       0.936 |      0.001 |
+| Vccint    |       1.000 |     1.126 |       1.103 |      0.023 |
+| Vccaux    |       1.800 |     0.136 |       0.123 |      0.014 |
+| Vcco33    |       3.300 |     0.948 |       0.947 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,7 +138,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| handshakes |     4.212 |
+| handshakes |     4.449 |
 +------------+-----------+
 
 

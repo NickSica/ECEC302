@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/imports/new/add3bits.vhd,1554843222,vhdl,,,,add3bits,,,,,,,,
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/imports/new/serial_adder.vhd,1555423900,vhdl,,,,serial_adder,,,,,,,,
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/adder.vhd,1555424634,vhdl,,,,adder,,,,,,,,
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/control.vhd,1555447162,vhdl,,,,control,,,,,,,,
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/pl_pack.vhd,1555424392,vhdl,E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/adder.vhd;E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/control.vhd;E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/sh_reg.vhd,,,pl_pack,,,,,,,,
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/imports/sources_1/new/sh_reg.vhd,1555424344,vhdl,,,,sh_reg,,,,,,,,
+E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/new/adder_test_bench.vhd,1559088074,vhdl,,,,adder_test_bench,,,,,,,,

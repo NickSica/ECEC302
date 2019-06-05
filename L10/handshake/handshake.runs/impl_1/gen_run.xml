@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1559605819">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1559684322">
   <File Type="BITSTR-BMM" Name="handshakes_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="handshakes_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="handshakes_timing_summary_init.rpt"/>
@@ -99,8 +99,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../Basys3_Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/ECEC302/Basys3_Master.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1559675554"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -116,7 +118,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

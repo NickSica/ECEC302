@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../adder_legacy.srcs/sources_1/imports/sources_1/imports/new/add3bits.vhd"
+vhdl xil_defaultlib  "../../../adder_legacy.srcs/sources_1/imports/sources_1/new/pl_pack.vhd"
+vhdl xil_defaultlib  "../../../adder_legacy.srcs/sources_1/imports/sources_1/new/control.vhd"
+vhdl xil_defaultlib  "../../../adder_legacy.srcs/sources_1/imports/sources_1/imports/new/serial_adder.vhd"
+vhdl xil_defaultlib  "../../../adder_legacy.srcs/sources_1/imports/sources_1/new/sh_reg.vhd"
+vhdl xil_defaultlib  "../../../adder_legacy.srcs/sources_1/imports/sources_1/new/adder.vhd"
+
+# Do not sort compile order
+nosort

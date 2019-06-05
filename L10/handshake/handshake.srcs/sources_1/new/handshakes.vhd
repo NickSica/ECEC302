@@ -65,7 +65,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity handshakes is
-    generic(n: natural := 10);
+    generic(n: natural := 4);
     port(clk, reset, btnC, btnR : in std_logic;
          sw: in std_logic_vector(n-1 downto 0);
          s_request_service: in std_logic;--A2
@@ -89,6 +89,8 @@ architecture beh of handshakes is
     
     signal d_in: std_logic_vector(n-1 downto 0); -- data received FF
     signal d_out: std_logic; -- data sent FF
+    
+    
 begin
     --------------------------
     -- Capture button event
@@ -98,7 +100,7 @@ begin
     process(clk)
         type my_state is (rdy,pulse,rst);
         variable n_s : my_state;
-        variable index: natural := n-1;
+        variable index: natural range n-1 downto 0 := n;
     begin
         if(rising_edge(clk)) then
             if reset = '1' then
@@ -116,9 +118,9 @@ begin
                     start <= '1';
                     if(index = 0) then
                         n_s := rst;
-                        index := n-1;
-                        d_out <= sw(0);
-                    else
+                    end if;
+                    
+                    if(start_job = '1') then
                         d_out <= sw(index);
                         index := index - 1;
                     end if;
@@ -318,7 +320,7 @@ begin
     -- Capture and display
     ----------------------
     process(clk)
-        variable index: natural := n-1; 
+        variable index: natural range n downto 0 := n;
     begin
         if(rising_edge(clk)) then
             if(reset = '1') then
@@ -327,10 +329,10 @@ begin
             else
                 if(start_job = '1') then
                     if(index = 0) then
-                        d_in(0) <= s_data_in;
                         job_completed <= '1';
-                        index := n-1;
-                    else
+                    end if;
+                    
+                    if(not(index = n)) then
                         d_in(index) <= s_data_in;
                         index := index - 1;
                     end if;
@@ -343,6 +345,6 @@ begin
     ------------------
     -- display d_in
     ------------------
-    led <= d_in;
+    led <= d_in;  
 end beh;
 

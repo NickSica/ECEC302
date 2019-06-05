@@ -1,0 +1,8 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Failure: Test Completed
+Time: 750 ns  Iteration: 0  Process: /adder_test_bench/line__59  File: E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/new/adder_test_bench.vhd
+$finish called at time : 750 ns : File "E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/new/adder_test_bench.vhd" Line 85
+Failure: Test Completed
+Time: 750 ns  Iteration: 0  Process: /adder_test_bench/line__59  File: E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/new/adder_test_bench.vhd
+$finish called at time : 750 ns : File "E:/ECEC302 DSP/Homework/HW 7 a And b/adder_testbench_part_b/adder_testbench_part_b.srcs/sources_1/new/adder_test_bench.vhd" Line 85

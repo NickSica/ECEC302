@@ -1,0 +1,1 @@
+-wto "aeaff4f86d3746e4909ef283caef43a5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "handshakes_behav" "xil_defaultlib.handshakes" -log "elaborate.log" 
