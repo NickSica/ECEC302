@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Aug 14 11:54:24 2019
+# Process ID: 8300
+# Current directory: /home/nick/ECEC302/HW1/signed_mult
+# Command line: vivado -mode tcl -source compile.tcl -tclargs Basys3_Master.xdc vhdl
+# Log file: /home/nick/ECEC302/HW1/signed_mult/vivado.log
+# Journal file: /home/nick/ECEC302/HW1/signed_mult/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in /home/nick/.Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script '/home/nick/.Xilinx/Vivado/init.tcl'
+source compile.tcl
+# set outputDir ./build
+# file mkdir $outputDir
+# if {$argc == 0} {
+#     read_verilog [ glob ./src/*.sv ]
+#     read_xdc ./src/constraints.xdc
+# } elseif {$argc == 1} {
+#     read_xdc ./src/(lindex $argv 0)
+# } elseif {$argc == 2} {
+#     set lang [lindex $argv 1]
+#     set constraints ./src/[lindex $argv 0]
+#     if {$lang == "vhdl"} {
+#         read_vhdl [ glob ./src/*.vhd ]
+# 	read_xdc $constraints
+#     } elseif {$lang == "verilog"} {
+#         read_verilog [ glob ./src/*.sv ]
+# 	read_xdc $contraints
+#     } elseif {$lang == "both"} {
+# 	read_verilog [ glob ./src/*.sv ]
+# 	read_vhdl [ glob ./src/*.vhd ]
+# 	read_xdc $contraints
+#     }
+# 
+# }
+# synth_design -top top -part xc7a100tcsg324-1
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8306 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1664.270 ; gain = 153.688 ; free physical = 12985 ; free virtual = 16417
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'top' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1719.020 ; gain = 208.438 ; free physical = 12984 ; free virtual = 16442
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+quit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 11:55:15 2019...

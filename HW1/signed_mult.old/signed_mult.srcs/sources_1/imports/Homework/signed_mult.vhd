@@ -1,18 +1,19 @@
+package reg_mult_pack is
+    constant n: natural := 3;
+end reg_mult_pack;
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_signed.all;
-
-package reg_mult_pack is
-  constant n: nature := 3;
-end reg_mult_pack
+use work.reg_mult_pack.all;
 
 entity signed_mult is
-  Port(clk: in std_logic,
-       x, y: in std_logic_vector(n-1 downto 0),
-       rx, ry: in std_logic_vector(n-1 downto 0),
-       en: in std_logic,
-       z: out signed std_logic_vector(2*n-1 downto 0))
+  Port(clk: in std_logic;
+       x, y: in std_logic_vector(n-1 downto 0);
+       en: in std_logic;
+       rx, ry: out std_logic_vector(n-1 downto 0);
+       z: out std_logic_vector(2*n-1 downto 0));
 end signed_mult;
 
 architecture beh of signed_mult is
@@ -21,7 +22,7 @@ architecture beh of signed_mult is
   begin
     process(clk)
     begin
-      if ck = '1' and ck'event then
+      if clk = '1' and clk'event then
         if en = '1' then
           temp_x <= x;
           temp_y <= y;

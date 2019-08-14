@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Aug 14 11:54:24 2019
+# Process ID: 8300
+# Current directory: /home/nick/ECEC302/HW1/signed_mult
+# Command line: vivado -mode tcl -source compile.tcl -tclargs Basys3_Master.xdc vhdl
+# Log file: /home/nick/ECEC302/HW1/signed_mult/vivado.log
+# Journal file: /home/nick/ECEC302/HW1/signed_mult/vivado.jou
+#-----------------------------------------------------------
+source compile.tcl
+ls
+quit
