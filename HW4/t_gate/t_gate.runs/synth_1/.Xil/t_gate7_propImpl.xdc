@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/nick/ECEC302/W5/Homework/t_gate/t_gate.srcs/constrs_1/imports/ECEC302/Basys3_Master.xdc rfile:../../../t_gate.srcs/constrs_1/imports/ECEC302/Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/xoepe/Documents/ECEC302/HW4/t_gate/t_gate.srcs/constrs_1/imports/ECEC302/Basys3_Master.xdc rfile:../../../t_gate.srcs/constrs_1/imports/ECEC302/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports {x[1]}]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

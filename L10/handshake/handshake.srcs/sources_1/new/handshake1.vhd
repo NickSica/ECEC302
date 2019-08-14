@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity handshake1 is
-    port(clk, reset, sw, btnC, btnR : in std_logic;
+    port(clk, reset, sw, btnC, btnR: in std_logic;
          s_request_service: in std_logic;--A2
          c_request_received: in std_logic;--A4
          c_service_done: in std_logic;-- A8

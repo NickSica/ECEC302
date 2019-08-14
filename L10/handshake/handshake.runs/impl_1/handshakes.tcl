@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -73,7 +74,7 @@ set rc [catch {
   set_property ip_output_repo C:/Users/xoepe/Documents/ECEC302/L10/handshake/handshake.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/xoepe/Documents/ECEC302/L10/handshake/handshake.runs/synth_1/handshakes.dcp
-  read_xdc C:/Users/xoepe/Documents/ECEC302/Basys3_Master.xdc
+  read_xdc C:/Users/xoepe/Documents/ECEC302/L10/handshake/handshake.srcs/constrs_1/imports/ECEC302/Basys3_Master.xdc
   link_design -top handshakes -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

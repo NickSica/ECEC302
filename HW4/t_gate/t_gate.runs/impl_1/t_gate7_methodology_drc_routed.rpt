@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Tue Apr 30 12:12:47 2019
-| Host         : nicklinux running 64-bit unknown
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun  4 15:25:19 2019
+| Host         : DESKTOP-6BMKAM4 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file t_gate7_methodology_drc_routed.rpt -pb t_gate7_methodology_drc_routed.pb -rpx t_gate7_methodology_drc_routed.rpx
 | Design       : t_gate7
 | Device       : xc7a35tcpg236-1
